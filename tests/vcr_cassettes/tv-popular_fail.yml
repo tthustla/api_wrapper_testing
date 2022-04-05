@@ -1,0 +1,45 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.11.1
+    method: GET
+    uri: https://api.themoviedb.org/3/tv/popular?page=501
+  response:
+    body:
+      string: '{"errors":["page must be less than or equal to 500"]}'
+    headers:
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sat, 02 Apr 2022 15:51:40 GMT
+      Server:
+      - openresty
+      Via:
+      - 1.1 463c61d5be9284ffc1eec85e247d041a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 0JhX0MeD-cAchR_C95JSbt6R-zGjQP5PGXiAeiKXcRk7Dfl-ecS-Hg==
+      X-Amz-Cf-Pop:
+      - LHR61-C2
+      X-Cache:
+      - Error from cloudfront
+    status:
+      code: 422
+      message: Unknown
+version: 1
